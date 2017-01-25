@@ -27,6 +27,7 @@ function createCard(){
 		</div>`;
 
 	var divElement = document.createElement("div");
+	divElement.id = "card--" + childrenCount;
 	divElement.innerHTML = newString;
 
 
@@ -38,9 +39,11 @@ function createCard(){
 }
 
 function deleteCard(event){
-	console.log("Card to Delete: ", event.target.id);
+	console.log("Card to Delete: ", event.target.parentNode.id);
 
-	var cardToDelete = event.target.parentNode;
+	var cardToDelete = event.target.parentNode.parentNode.parentNode;
+
+	console.log("CardToDelete2: ", cardToDelete.parentNode.parentNode);
 
 	cardToDelete.parentNode.removeChild(cardToDelete);
 }
