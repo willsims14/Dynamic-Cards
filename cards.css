@@ -1,0 +1,31 @@
+#sideBar{
+	background-color: lightblue;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#sideBar div{
+	margin-top: 10px;
+	flex: 1 1 1;
+}
+
+#cardContainer{
+	background-color: lightyellow;
+	width: 100%;
+
+}
+
+#mainContent{
+	display: flex;
+	flex-direction: row;
+
+
+}
+
+.card{
+	background-color: lightblue;
+	margin: 0 0%;
+	text-align: center;
+}
+
